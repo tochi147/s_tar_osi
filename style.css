@@ -1,0 +1,136 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f4f4f4;
+}
+.container{
+    max-width: 1500px;
+    margin: auto;
+    padding: 0px;
+}
+ul{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: black;
+    color: #ffffff;
+    padding: 10px 20px;
+}
+ul li{
+    list-style: none;
+}
+ul a{
+    text-decoration: none;
+    color: white;
+}
+ul a:hover{
+    color: #e8491d;
+}
+nav{
+    width: 100%;
+}
+.header-content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #13b9b9;
+    padding: 0px 80px;
+    padding-top: 10px;
+}
+h1{
+    font-size: 40px;
+}
+.header-text{
+    width: 50%;
+    color: black;
+}
+.header-text h1{
+    font-size: 60px;
+    margin-bottom: 20px;
+}
+.header-text p{
+    font-size: 20px;
+    line-height: 1.5;
+}
+.header-image img{
+    width: 100%;;
+}
+.header-image{
+    width: 50%;
+    height: auto;
+}
+.carousel{
+    display: flex;
+    overflow-x: auto;
+    scroll-snap-type: x mandatory;
+    gap: 20px;
+    padding-bottom: 20px;
+}
+.carousel::-webkit-scrollbar{
+    display: none;
+}
+.carousel-item{
+    min-width: 400px;
+    padding-top: 20px;
+}
+.carousel-item img{
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+    scroll-snap-align: start;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+.section-content{
+    padding: 20px 80px;
+    text-align: center;
+}
+footer{
+    background-color: #333;
+    color: white;
+
+    text-align: center;
+    padding: 20px 0;
+}
+body,html{
+    overflow-x: hidden;
+}
+@media (max-width: 768px) {
+    .header-content{
+        flex-direction: column;
+        align-items: center;
+        padding: 0px 20px;
+    }
+    ul {
+        flex-direction: row;
+        justify-content: center;
+        text-align: center;
+        gap: 20px;
+        padding: 10px;
+    }
+    .header-text h1{
+        
+        font-size: 40px;
+    }
+    h1{
+        font-size: 30px;
+    }
+    .header-text, .header-image{
+        width: 100%;
+    }
+    .carousel-item{
+        min-width: 90%;
+    }
+    .section-content{
+        padding: 20px 10px;
+    }
+
+    ul li{
+        margin-bottom: 10px;
+    }
+}
+
+
