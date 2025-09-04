@@ -7,15 +7,26 @@
     <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
 </head>
 <body>
     <header>
         <nav>
             <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
+                <li><a href="/home.html">Home</a></li>
+                <li><a href="#">About</a></li>
+                <div id="services-dropdown" class="dropdown">
+                <li><a href="#">Services <i class="fa-solid fa-chevron-down"></i></a></li>
+                    <div id="services-dropdown-content" class="dropdown-content">
+                    <li><a href="#">Graphic Design</a></li>
+                    <li><a href="#">Web Design</a></li>
+                    <li><a href="#">Branding</a></li>
+                </div>
+                </div>            
+                <li><a href="#">Contact</a></li>
             </ul>
+
         </nav>
         <div class="header-content">
             <div class="header-text">
@@ -27,10 +38,17 @@
             </div>
         </div>
     </header>
+           <h1 style="text-align: center; margin: 40px 0;">Designs From Esther Osinachi</h1>
+    <section>
+        <div class="video-container">
+            <video width="640" height="360" controls>
+                <source src="/WhatsApp Video 2025-09-03 at 02.06.29_e8c79eb3.mp4" type="video/mp4">
+            </video>
+        </div>
+    </section>
     <section>
         <div class="container">
             <div class="section-content">
-                <h1>Designs From s_tar_osi</h1>
                 <div class="carousel">
                     <div class="carousel-item">
                         <img src="/images/1000061744[1].jpg" alt="Image 1">
@@ -98,7 +116,21 @@
                      <div class="carousel-item">
                         <img src="/images/1000097463[1].jpg" alt="Image 22">
                     </div>
-                </div>
+                    <div class="carousel-item">
+                        <img src="/images/1000136203[1].jpg" alt="Image 23">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/1000137701[1].jpg" alt="Image 24">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/1000075989[1].jpg" alt="Image 25">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/1000075999[1].jpg" alt="Image 26">
+                    </div>
+                    <div class="carousel-item">
+                        <img src="/images/1000138773[1].jpg" alt="Image 27">
+                    </div>
 
             </div>
 
@@ -109,6 +141,21 @@
     <footer>
         <p>&copy; 2025 My Portfolio. All rights reserved.</p>
     </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            const dropdown = document.getElementById('services-dropdown');
+            const dropdownContent = document.getElementById('services-dropdown-content');
+
+            dropdown.addEventListener('mouseover', function() {
+                dropdownContent.style.display = 'block';
+            });
+
+            dropdown.addEventListener('mouseout', function() {
+                dropdownContent.style.display = 'none';
+            });
+        });
+
+    </script>
 
     
 </body>
